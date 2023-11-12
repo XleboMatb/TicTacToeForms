@@ -142,7 +142,7 @@ namespace TicTacToe
                 ResetTheField();
                 return;
             }
-            else if (slotsLeft < 0)
+            else if (slotsLeft <= -1) //я не знаю, что тут не так х3
             {
                 MessageBox.Show("tie");
                 ResetTheField();
